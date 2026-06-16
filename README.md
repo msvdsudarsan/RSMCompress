@@ -119,7 +119,6 @@ RSMCompress/
 ## Running the Figures
 
 ```matlab
-cd figures/
 run_all_figures
 ```
 
