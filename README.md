@@ -20,6 +20,7 @@
 
 No prior work compresses a Lyapunov-certified neural network controller while preserving its stability guarantees. This paper addresses that gap for singularly perturbed nonlinear systems by decomposing the control-sensitive Fisher information matrix (CS-FIM) asymptotically along the slow manifold and boundary layer, establishing that the dominant parameter-space curvature is determined to leading order in ε by the slow subsystem alone. Regional input-to-state stability (ISS) of the compressed closed-loop system is proved via a composite Lyapunov function for all ε ∈ (0, ε*), and reformulated as semi-global practical ISS.
 
+This repository contains the MATLAB scripts, numerical verification outputs, and figure-generation files used to reproduce all results reported in the manuscript.
 ---
 
 ## Key Results
@@ -118,12 +119,11 @@ RSMCompress/
 
 ## Running the Figures
 
-```Open MATLAB and execute:
+Open MATLAB and execute:
 
 run_all_figures
-```
 
-All seven figures will be saved as PDF and PNG in the working directory.
+All seven figures will be saved as PDF and PNG files in the current working directory.
 
 ---
 
