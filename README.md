@@ -152,6 +152,9 @@ All seven figures will be saved as PDF and PNG in the working directory.
 ## Contact
 
 Sri Venkata Durga Sudarsan Madhyannapu
+
 Email: msvdsudarsan@gmail.com
+
 ORCID: [0009-0001-2126-6428](https://orcid.org/0009-0001-2126-6428)
-GitHub: [github.com/msvdsudarsan](https://github.com/msvdsudarsan)
+
+GitHub Repository: [RSMCompress](https://github.com/msvdsudarsan/RSMCompress)
