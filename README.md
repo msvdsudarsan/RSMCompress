@@ -118,7 +118,8 @@ RSMCompress/
 
 ## Running the Figures
 
-```matlab
+```Open MATLAB and execute:
+
 run_all_figures
 ```
 
@@ -133,9 +134,8 @@ All seven figures will be saved as PDF and PNG in the working directory.
   title   = {Stability-Preserving Neural Network Controller Compression
              for Singularly Perturbed Systems via Riemannian Slow-Manifold Geometry},
   author  = {Madhyannapu, Sri Venkata Durga Sudarsan and Pradheep Kumar, Sravanam},
-  journal = {Automatica},
-  year    = {2026},
-  note    = {Submitted}
+  journal = {Submitted to Automatica},
+  year = {2026}
 }
 ```
 
@@ -155,7 +155,7 @@ Sri Venkata Durga Sudarsan Madhyannapu
 
 Email: msvdsudarsan@gmail.com
 
-ORCID: [0009-0001-2126-6428](https://orcid.org/0009-0001-2126-6428)
+ORCID: https://orcid.org/0009-0001-2126-6428
 
 GitHub Repository:
 https://github.com/msvdsudarsan/RSMCompress
