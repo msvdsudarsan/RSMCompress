@@ -157,4 +157,5 @@ Email: msvdsudarsan@gmail.com
 
 ORCID: [0009-0001-2126-6428](https://orcid.org/0009-0001-2126-6428)
 
-GitHub Repository: [RSMCompress](https://github.com/msvdsudarsan/RSMCompress)
+GitHub Repository:
+https://github.com/msvdsudarsan/RSMCompress
