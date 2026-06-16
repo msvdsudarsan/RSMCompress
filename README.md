@@ -37,18 +37,24 @@ All tests over **1,000 evaluation episodes** on ARM Cortex-M7.
 
 ```
 RSMCompress/
-├── figures/
-│   ├── Fig1_RSMCompress_Pipeline.m       Five-phase pipeline diagram
-│   ├── Fig2_CSTR_Trajectory.m            CSTR concentration trajectory
-│   ├── Fig3_Quadrotor_Trajectory.m       Quadrotor x-position trajectory
-│   ├── Fig4_Fisher_Eigenvalue_Decay.m    CS-FIM eigenvalue log-log decay
-│   ├── Fig5_NGD_Convergence.m            NGD convergence (Phase 5)
-│   ├── Fig6_Epsilon_Rank_Dependence.m    ε-sweep rank and compression
-│   ├── Fig7_Ablation_Study.m             Ablation study visualisation
-│   └── run_all_figures.m                 Master runner script
-├── docs/
-│   └── CORRECTIONS.md                    Numerical corrections log
-└── README.md
+├── README.md
+├── LICENSE
+├── MATLAB_OUTPUT_VALUES.txt
+├── run_all_figures.m
+├── Fig1_RSMCompress_Pipeline.m
+├── Fig2_CSTR_Trajectory.m
+├── Fig3_Quadrotor_Trajectory.m
+├── Fig4_Fisher_Eigenvalue_Decay.m
+├── Fig5_NGD_Convergence.m
+├── Fig6_Epsilon_Rank_Dependence.m
+├── Fig7_Ablation_Study.m
+├── Fig1_RSMCompress_Pipeline.pdf
+├── Fig2_CSTR_Trajectory.pdf
+├── Fig3_Quadrotor_Trajectory.pdf
+├── Fig4_Fisher_Eigenvalue_Decay.pdf
+├── Fig5_NGD_Convergence.pdf
+├── Fig6_Epsilon_Rank_Dependence.pdf
+└── Fig7_Ablation_Study.pdf
 ```
 
 ---
