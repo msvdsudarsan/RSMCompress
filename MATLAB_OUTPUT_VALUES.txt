@@ -80,3 +80,26 @@ Fig7_Ablation_Study                  PASS   3.88 s
 Passed : 7 / 7
 Failed : 0 / 7
 ============================================================
+
+>> RSMCompress_Table2_Timing
+=== RSM-Compress Table 2 Timing Measurements ===
+
+=== CSTR (p=8321, eps=0.05) ===
+  CS-FIM estimation:   0.01 s
+  NGD refinement:      0.04 s
+  [r* = 16, K = 500 iterations]
+
+=== Quadrotor (p=57603, eps=0.03) ===
+  CS-FIM estimation:   0.00 s
+  NGD refinement:      0.02 s
+  [r* = 6, K = 500 iterations]
+
+=== DC-DC (p=2145, eps=0.02) ===
+  CS-FIM estimation:   0.00 s
+  NGD refinement:      0.00 s
+  [r* = 5, K = 500 iterations]
+
+=================================================
+TABLE 2 VALUES FOR main-5.tex (V19):
+=================================================
+>> 
