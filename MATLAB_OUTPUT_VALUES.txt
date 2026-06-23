@@ -103,3 +103,20 @@ Failed : 0 / 7
 TABLE 2 VALUES FOR main-5.tex (V19):
 =================================================
 >> 
+
+--- CSTR Benchmark (N=50 trajectories) ---
+  Norm. error (RSM/Full): 1.020 +/- 0.002
+  Wilcoxon rank-sum p (RSM vs Full): 0.3192
+  Significant at alpha=0.05? NO
+
+--- Quadrotor Benchmark (N=50 trajectories) ---
+  Position error RSM-Compress (m): 0.0097 +/- 0.0004
+  Position error Full network (m): 0.0084 +/- 0.0004
+  Norm. error (RSM/Full):          1.151 +/- 0.031
+  Wilcoxon rank-sum p (RSM vs Full): 0.0000
+  Significant at alpha=0.05? YES
+
+[Done] Benchmark_Statistics.m complete. Results saved to:
+  Benchmark_Statistics_Results.mat
+  Benchmark_Statistics_Results.txt
+>> 
