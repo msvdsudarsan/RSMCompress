@@ -106,6 +106,14 @@ All values above were independently cross-checked between the manuscript and the
 | **Theorem 5.4** (NGD Conv.) | Local O(1/K) convergence under local strong convexity |
 
 ---
+## Reproducibility Note (Table 2)
+Timing values in Table 2 were measured using 
+`RSMCompress_Table2_Timing.m`. The CS-FIM estimation 
+uses a rank-r proxy consistent with the O(p^2*T) complexity 
+reported in Section 7.1. Full-scale timings for camera-ready 
+revision will be updated upon local hardware measurement.
+
+---
 
 ## Implementation Details
 
