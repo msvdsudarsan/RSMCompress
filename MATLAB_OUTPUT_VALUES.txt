@@ -1,0 +1,159 @@
+============================================================
+RSM-Compress — Verified MATLAB Numerical Outputs
+Manuscript: Stability-Preserving Neural Network Controller
+  Compression for Singularly Perturbed Systems via
+  Riemannian Slow-Manifold Geometry
+Authors: Sri Venkata Durga Sudarsan Madhyannapu
+         Sravanam Pradheep Kumar
+Journal: Automatica (IFAC/Elsevier)
+============================================================
+
+>> run_all_figures
+
+============================================================
+Figure Suite — Individual Script Outputs
+============================================================
+
+>> Fig1_RSMCompress_Pipeline
+[Done] Fig1_RSMCompress_Pipeline saved.
+
+>> Fig2_CSTR_Trajectory
+[Done] Fig2_CSTR_Trajectory saved.
+
+>> Fig3_Quadrotor_Trajectory
+[Done] Fig3_Quadrotor_Trajectory saved.
+
+>> Fig4_Fisher_Eigenvalue_Decay
+--- Rank Selection Verification ---
+  alpha          = 0.4400
+  threshold      = 0.875453  (paper: 87.5%)
+  Selected r1    = 16        (paper Table 6: r1 = 16)
+  Compression    = 1024x     (paper Table 6: 1024x)
+[Done] Fig4_Fisher_Eigenvalue_Decay saved.
+
+>> Fig5_NGD_Convergence
+--- NGD Convergence Summary ---
+  CSTR:      within 0.1% at k = 500
+  Quadrotor: within 0.1% at k = 500
+  Both benchmarks converge within 0.1% by k = 500
+[Done] Fig5_NGD_Convergence saved.
+
+>> Fig6_Epsilon_Rank_Dependence
+--- Rank Selection Verification (alpha = 0.44) ---
+  eps=0.01: threshold=0.7471, r1=6  (paper Table 6: r1=6)
+  eps=0.05: threshold=0.8755, r1=16 (paper Table 6: r1=16)
+  eps=0.10: threshold=0.9082, r1=23 (paper Table 6: r1=23)
+  eps=0.20: threshold=0.9323, r1=32 (paper Table 6: r1=32)
+[Done] Fig6_Epsilon_Rank_Dependence saved.
+  Confirms: smaller eps => lower rank at comparable performance.
+
+>> Fig7_Ablation_Study
+[Done] Fig7_Ablation_Study saved as PDF + PNG.
+  Key result: slow-manifold FIM split is the dominant contributor (+24.8%)
+  Synergy: removing all 3 components: +54.3% > sum of independent +45.3%
+
+============================================================
+Figure Suite — Full run_all_figures Summary
+============================================================
+
+[Done] Fig1_RSMCompress_Pipeline saved.
+[PASS] Fig1_RSMCompress_Pipeline (3.25 s)
+[Done] Fig2_CSTR_Trajectory saved.
+[PASS] Fig2_CSTR_Trajectory (4.14 s)
+[Done] Fig3_Quadrotor_Trajectory saved.
+[PASS] Fig3_Quadrotor_Trajectory (4.20 s)
+--- Rank Selection Verification ---
+  alpha          = 0.4400
+  threshold      = 0.875453  (paper Table 6: 87.5%)
+  Selected r1    = 16        (paper Table 6: r1 = 16)
+  Compression    = 1024x     (paper Table 6: 1024x)
+[Done] Fig4_Fisher_Eigenvalue_Decay saved.
+[PASS] Fig4_Fisher_Eigenvalue_Decay (4.49 s)
+--- NGD Convergence Summary ---
+  CSTR:      within 0.1% at k = 500
+  Quadrotor: within 0.1% at k = 500
+  Both benchmarks converge within 0.1% by k = 500
+[Done] Fig5_NGD_Convergence saved.
+[PASS] Fig5_NGD_Convergence (3.76 s)
+--- Rank Selection Verification (alpha = 0.44) ---
+  eps=0.01: threshold=0.7471, r1=6  (paper Table 6: r1=6)
+  eps=0.05: threshold=0.8755, r1=16 (paper Table 6: r1=16)
+  eps=0.10: threshold=0.9082, r1=23 (paper Table 6: r1=23)
+  eps=0.20: threshold=0.9323, r1=32 (paper Table 6: r1=32)
+[Done] Fig6_Epsilon_Rank_Dependence saved.
+  Confirms: smaller eps => lower rank at comparable performance.
+[PASS] Fig6_Epsilon_Rank_Dependence (4.54 s)
+[Done] Fig7_Ablation_Study saved as PDF + PNG.
+  Key result: slow-manifold FIM split is the dominant contributor (+24.8%)
+  Synergy: removing all 3 components: +54.3% > sum of independent +45.3%
+[PASS] Fig7_Ablation_Study (3.88 s)
+
+============================================================
+SUMMARY
+============================================================
+Fig1_RSMCompress_Pipeline            PASS   3.25 s
+Fig2_CSTR_Trajectory                 PASS   4.14 s
+Fig3_Quadrotor_Trajectory            PASS   4.20 s
+Fig4_Fisher_Eigenvalue_Decay         PASS   4.49 s
+Fig5_NGD_Convergence                 PASS   3.76 s
+Fig6_Epsilon_Rank_Dependence         PASS   4.54 s
+Fig7_Ablation_Study                  PASS   3.88 s
+------------------------------------------------------------
+Passed : 7 / 7
+Failed : 0 / 7
+============================================================
+
+>> RSMCompress_Table2_Timing
+
+=== RSM-Compress Table 2 Timing Measurements ===
+
+=== CSTR (p=8321, eps=0.05) ===
+  CS-FIM estimation:   0.013 s
+  NGD refinement:      0.041 s
+  [r* = 16, K = 500 iterations]
+
+=== Quadrotor (p=57603, eps=0.03) ===
+  CS-FIM estimation:   <0.005 s
+  NGD refinement:      0.022 s
+  [r* = 6, K = 500 iterations]
+
+=== DC-DC (p=2145, eps=0.02) ===
+  CS-FIM estimation:   <0.005 s
+  NGD refinement:      <0.005 s
+  [r* = 5, K = 500 iterations]
+
+=================================================
+TABLE 2 VALUES (manuscript):
+  CSTR     : CS-FIM 0.013 s, NGD 0.041 s
+  Quadrotor: CS-FIM <0.005 s, NGD 0.022 s
+  DC-DC    : CS-FIM <0.005 s, NGD <0.005 s
+=================================================
+
+>> Benchmark_Statistics
+
+--- CSTR Benchmark (N=50 trajectories) ---
+  Norm. error (RSM/Full): 1.058 +/- 0.104
+  Wilcoxon rank-sum p (RSM vs Full): 0.4130
+  Significant at alpha=0.05? NO
+
+--- Quadrotor Benchmark (N=50 trajectories) ---
+  Position error RSM-Compress (m): 0.0097 +/- 0.0004
+  Position error Full network  (m): 0.0084 +/- 0.0004
+  Norm. error (RSM/Full):          1.151 +/- 0.031
+  Wilcoxon rank-sum p (RSM vs Full): <0.001
+  Significant at alpha=0.05? YES
+
+--- DC-DC Benchmark (N=50 trajectories) ---
+  Voltage RMS error RSM (V): 0.0169
+  Voltage RMS error Full (V): 0.0156
+  Norm. error (RSM/Full): 1.083
+  Wilcoxon rank-sum p (RSM vs Full): 0.2800
+  Significant at alpha=0.05? NO
+
+[Done] Benchmark_Statistics.m complete. Results saved to:
+  Benchmark_Statistics_Results.mat
+  Benchmark_Statistics_Results.txt
+
+============================================================
+END OF VERIFIED OUTPUTS
+============================================================
